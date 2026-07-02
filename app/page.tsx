@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 
+const A = "#818CF8"; // accent
 const SIGNUP_EMAIL = "hello@openmirrorllc.com";
 
 const features = [
@@ -24,40 +25,40 @@ export default function Friendbookagram() {
   };
 
   return (
-    <main className="min-h-screen bg-indigo-950 text-indigo-50">
+    <main className="min-h-screen bg-[#0C0C0C] text-[#F5F0E8]">
       <div className="mx-auto max-w-2xl px-5 py-12">
 
         {/* Brand */}
         <div className="mb-14 inline-flex items-baseline text-lg font-black tracking-tight">
-          <span className="text-white">Friendbookagram</span>
-          <span className="text-indigo-400">.com</span>
+          <span className="text-[#F5F0E8]">Friendbookagram</span>
+          <span style={{ color: A }}>.com</span>
         </div>
 
         {/* Hero */}
         <section className="mb-12 text-center">
-          <p className="mb-4 text-xs font-black uppercase tracking-[0.3em] text-indigo-400">
+          <p className="mb-4 text-xs font-black uppercase tracking-[0.3em]" style={{ color: A }}>
             Coming soon · Private beta
           </p>
           <div className="mb-6 text-6xl">🫂</div>
-          <h1 className="mb-5 text-4xl font-black leading-tight text-white sm:text-6xl">
+          <h1 className="mb-5 text-4xl font-black leading-tight text-[#F5F0E8] sm:text-6xl">
             Friendbookagram
           </h1>
-          <p className="mx-auto mb-4 max-w-lg text-lg font-semibold leading-8 text-indigo-100">
+          <p className="mx-auto mb-4 max-w-lg text-lg font-semibold leading-8 text-[#F5F0E8]">
             The friend feed, minus the noise. Share photos and everyday moments with the people you actually know.
           </p>
-          <p className="text-sm font-black uppercase tracking-[0.2em] text-indigo-300/70">
+          <p className="text-sm font-black uppercase tracking-[0.2em]" style={{ color: A }}>
             No ads · No algorithm · No strangers
           </p>
         </section>
 
         {/* Waitlist */}
-        <section className="mb-14 rounded-3xl border border-indigo-400/15 bg-indigo-900/25 p-7 text-center">
-          <h2 className="mb-2 text-xl font-black text-white">Save your spot</h2>
-          <p className="mx-auto mb-6 max-w-sm text-sm font-semibold text-indigo-200/80">
+        <section className="mb-14 rounded-3xl border border-[#262626] bg-[#151515] p-7 text-center">
+          <h2 className="mb-2 text-xl font-black text-[#F5F0E8]">Save your spot</h2>
+          <p className="mx-auto mb-6 max-w-sm text-sm font-semibold text-[#9A9188]">
             Drop your email and we&apos;ll let you know the moment your private friend space is ready.
           </p>
           {sent ? (
-            <div className="rounded-2xl border border-indigo-400/25 bg-indigo-500/10 px-5 py-4 text-sm font-bold text-indigo-100">
+            <div className="rounded-2xl border border-[#262626] bg-[#1C1C1C] px-5 py-4 text-sm font-bold text-[#F5F0E8]">
               🎉 Almost there — just hit send in the email that popped up and you&apos;re on the list!
             </div>
           ) : (
@@ -68,9 +69,9 @@ export default function Friendbookagram() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="you@email.com"
-                className="flex-1 rounded-full border-2 border-indigo-400/20 bg-indigo-950/50 px-5 py-3 text-base text-white outline-none placeholder:text-indigo-300/40 focus:border-indigo-400"
+                className="flex-1 rounded-full border-2 border-[#262626] bg-[#1C1C1C] px-5 py-3 text-base text-white outline-none placeholder:text-[#6B6B6B] focus:border-[#818CF8]"
               />
-              <button type="submit" className="rounded-full bg-indigo-500 px-7 py-3 text-sm font-black uppercase tracking-[0.12em] text-white hover:bg-indigo-400 transition">
+              <button type="submit" style={{ background: A, color: "#0C0C0C" }} className="rounded-full px-7 py-3 text-sm font-black uppercase tracking-[0.12em] hover:opacity-90 transition">
                 Save my spot →
               </button>
             </form>
@@ -80,22 +81,22 @@ export default function Friendbookagram() {
         {/* Features */}
         <section className="mb-14 grid gap-4 sm:grid-cols-3">
           {features.map((f) => (
-            <div key={f.title} className="rounded-2xl border border-indigo-400/15 bg-indigo-900/20 p-6 text-center">
+            <div key={f.title} className="rounded-2xl border border-[#262626] bg-[#151515] p-6 text-center">
               <div className="mb-3 text-3xl">{f.emoji}</div>
-              <h3 className="mb-2 text-base font-black text-white">{f.title}</h3>
-              <p className="text-sm font-semibold leading-6 text-indigo-200/70">{f.text}</p>
+              <h3 className="mb-2 text-base font-black text-[#F5F0E8]">{f.title}</h3>
+              <p className="text-sm font-semibold leading-6 text-[#9A9188]">{f.text}</p>
             </div>
           ))}
         </section>
 
         {/* Footer */}
-        <footer className="border-t border-indigo-400/10 pt-8 text-center">
+        <footer className="border-t border-[#262626] pt-8 text-center">
           <p className="mb-2 text-sm font-black tracking-tight">
-            <span className="text-indigo-200">Friendbookagram</span>
-            <span className="text-indigo-400">.com</span>
+            <span className="text-[#F5F0E8]">Friendbookagram</span>
+            <span style={{ color: A }}>.com</span>
           </p>
           <a href="https://openmirrorllc.com" target="_blank" rel="noopener noreferrer"
-            className="text-xs font-black uppercase tracking-[0.2em] text-indigo-400/50 hover:text-indigo-300 transition">
+            className="text-xs font-black uppercase tracking-[0.2em] text-[#9A9188] hover:text-[#F5F0E8] transition">
             An Open Mirror LLC project
           </a>
         </footer>
