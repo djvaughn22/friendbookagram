@@ -6,7 +6,7 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://friendbookagram.com"),
-  title: "Friendbookagram.com — Where Your Friends Actually Stay in Touch",
+  title: "Friendbookagram",
   description:
     "The friend feed, minus the noise. Share photos and everyday moments with the people you actually know — private, calm, and invite-only. Join the waitlist.",
 };
