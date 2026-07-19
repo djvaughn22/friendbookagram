@@ -40,7 +40,8 @@ export default function Friendbookagram() {
             Coming soon · Private beta
           </p>
           <div className="mb-6 text-6xl">🫂</div>
-          <h1 className="mb-5 text-4xl font-black leading-tight text-[#e8edf5] sm:text-6xl">
+          {/* clamp keeps the 15-character wordmark on one line down to 320px */}
+          <h1 className="mb-5 text-[clamp(1.7rem,10vw,2.25rem)] font-black leading-tight text-[#e8edf5] sm:text-6xl">
             Friendbookagram
           </h1>
           <p className="mx-auto mb-4 max-w-lg text-lg font-semibold leading-8 text-[#e8edf5]">
