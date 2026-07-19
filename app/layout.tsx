@@ -15,7 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html suppressHydrationWarning lang="en" className="antialiased">
       <body>
-        <OpenMirrorNav site="Friendbookagram.com" />
+        <OpenMirrorNav site="Friendbookagram.com" accent="#818CF8" />
         {children}
         <OpenMirrorFooter siteName="Friendbookagram.com" tagline="Where Your Friends Actually Stay in Touch" accent="#818CF8" />
         <Script
