@@ -18,8 +18,8 @@ export default function Friendbookagram() {
   const join = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email.trim()) return;
-    const subject = encodeURIComponent("Friendbookagram early access");
-    const body = encodeURIComponent(`I'd love early access to Friendbookagram.\n\nMy email: ${email.trim()}`);
+    const subject = encodeURIComponent("Friendbookagram — feedback");
+    const body = encodeURIComponent(`My thoughts on the Friendbookagram idea:\n\n\n\nMy email: ${email.trim()}`);
     window.location.href = `mailto:${SIGNUP_EMAIL}?subject=${subject}&body=${body}`;
     setSent(true);
   };
@@ -54,13 +54,13 @@ export default function Friendbookagram() {
 
         {/* Waitlist */}
         <section className="mb-14 rounded-3xl border border-[#26324c] bg-[#141d2e] p-7 text-center">
-          <h2 className="mb-2 text-xl font-black text-[#e8edf5]">Save your spot</h2>
+          <h2 className="mb-2 text-xl font-black text-[#e8edf5]">Tell us what you think</h2>
           <p className="mx-auto mb-6 max-w-sm text-sm font-semibold text-[#94a3b8]">
-            Want to follow along while the concept is tested? Send us an email and you&apos;re on the early list — it goes straight to a real inbox.
+            Friendbookagram is an Open Mirror concept being explored. If you&apos;d like to share feedback or interest, send us an email — it goes straight to a real inbox.
           </p>
           {sent ? (
             <div className="rounded-2xl border border-[#26324c] bg-[#1c2740] px-5 py-4 text-sm font-bold text-[#e8edf5]">
-              🎉 Almost there — just hit send in the email that popped up and you&apos;re on the list!
+              Just hit send in the email that opened — it goes straight to a real inbox. Thank you!
             </div>
           ) : (
             <form onSubmit={join} className="flex flex-col gap-3 sm:flex-row">
@@ -73,7 +73,7 @@ export default function Friendbookagram() {
                 className="flex-1 rounded-full border-2 border-[#26324c] bg-[#1c2740] px-5 py-3 text-base text-white outline-none placeholder:text-[#6B6B6B] focus:border-[#818CF8]"
               />
               <button type="submit" style={{ background: A, color: "#0b1220" }} className="rounded-full px-7 py-3 text-sm font-black uppercase tracking-[0.12em] hover:opacity-90 transition">
-                Save my spot →
+                Share feedback →
               </button>
             </form>
           )}
