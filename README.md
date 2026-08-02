@@ -1,8 +1,10 @@
-# friendbookagram
+# friendbookagram — RETIRED 2026-08-02
 
-Where your friends actually stay in touch. Private, calm, invite-only. (Waitlist)
+The standalone product is retired; the concept now lives inside iDontCry as a
+creative playground page: **https://www.idontcry.com/friendbookagram**.
+See `RETIREMENT.md` for the full record. The domain, while it resolves, serves
+a pointer page to the new home.
 
-**Live:** https://friendbookagram.com
 **Part of:** [Open Mirror LLC](https://openmirrorllc.com)
 
 ## Local dev

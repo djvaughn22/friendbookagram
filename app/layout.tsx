@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://friendbookagram.com"),
   title: "Friendbookagram",
   description:
-    "The friend feed, minus the noise. Share photos and everyday moments with the people you actually know — private, calm, and invite-only. An early idea being tested.",
+    "Friendbookagram now lives inside iDontCry as a creative concept page: idontcry.com/friendbookagram.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
